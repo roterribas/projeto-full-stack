@@ -1,0 +1,67 @@
+/* MENU */
+header {
+    background: #0a0a23;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Menu Desktop */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #00d0ff;
+}
+
+/* Botão hamburger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0a0a23;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        gap: 15px;
+        display: none;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
