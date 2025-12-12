@@ -44,3 +44,6 @@ slidesContainer.addEventListener("mouseleave", startAutoPlay);
 
 // Iniciar autoplay
 startAutoPlay();
+
+
+
