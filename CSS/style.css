@@ -93,6 +93,15 @@ body {
     margin-bottom: 10px;
 }
 
+.produto {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.produto h2 {
+    margin-bottom: 10px;
+}
+
 .cards {
     display: flex;
     justify-content: center;
