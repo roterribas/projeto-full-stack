@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* ===== CORES BASE ===== */
+:root {
+--bg-principal: #0f172a;
+--bg-secundario: #020617;
+--azul-destaque: #38bdf8;
+--texto-principal: #e5e7eb;
+--texto-secundario: #9ca3af;
+}
+
+/* ===== BODY ===== */
+body {
+background-color: var(--bg-principal);
+color: var(--texto-principal);
+line-height: 1.6;
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.sobre {
+max-width: 1000px;
+margin: 30px auto;
+padding: 20px;
+}
+
+.sobre h2 {
+color: var(--azul-destaque);
+margin-bottom: 10px;
+}
+
+.sobre p {
+font-size: 16px;
+}
+
+/* ===== CONTEÚDO ===== */
+.conteudo {
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+background-color: var(--bg-secundario);
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+color: var(--azul-destaque);
+margin-bottom: 10px;
+font-size: 20px;
+}
+
+.card p {
+color: var(--texto-principal);
+font-size: 15px;
+}
+
+/* ===== EFEITO HOVER ===== */
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+
+.card h2 {
+font-size: 18px;
+}
+
+.sobre,
+.conteudo {
+padding: 15px;
+}
+}

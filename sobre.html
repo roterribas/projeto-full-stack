@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>PC Gamer - Produtos em 2025</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0f172a;
-            color: #e5e7eb;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #020617;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: #38bdf8;
-        }
-        section {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #38bdf8;
-        }
-        .card {
-            background-color: #020617;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #020617;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            color: #9ca3af;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Tec Senai</title>
+
+
+<!-- CSS PADRÃO DO SITE -->
+<link rel="stylesheet" href="./CSS/menu.css">
+<link rel="stylesheet" href="./CSS/footer.css">
+
+<!-- CSS DA PÁGINA SOBRE -->
+<link rel="stylesheet" href="./CSS/sobre.css">
+
+
 </head>
 <body>
 
-    <header>
-        <h1>Produtos de PC Gamer - Início de 2025</h1>
-        <p>Tecnologia, desempenho e inovação para jogadores</p>
-    </header>
 
-    <section>
+<!-- ===== MENU (PADRÃO DO SITE) ===== -->
+<header>
+    <div class="logo">Tec Senai</div>
+    <button class="menu-toggle">☰</button>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+            <li><a href="sobre.html" class="ativo">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== CONTEÚDO SOBRE ===== -->
+<main>
+
+    <section class="sobre">
         <h2>Sobre Nós</h2>
         <p>
             Somos uma empresa focada em oferecer produtos de PC Gamer de alta qualidade,
@@ -59,68 +47,59 @@
         </p>
     </section>
 
-    <section>
-        <div class="card">
+    <section class="conteudo">
+
+        <article class="card">
             <h2>Como Surgiu a Ideia</h2>
             <p>
                 A ideia surgiu a partir da paixão por jogos e tecnologia. Observando o crescimento
                 do cenário gamer e a constante evolução dos hardwares, percebemos a necessidade
                 de um espaço que reunisse informação clara e produtos atualizados.
             </p>
-            <p>
-                Assim, no início de 2025, nasceu o projeto com o propósito de ajudar jogadores
-                a escolherem os melhores componentes e periféricos para montar ou atualizar
-                seus PCs gamers.
-            </p>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <h2>Placas de Vídeo (GPUs)</h2>
             <p>
-                As GPUs mais recentes oferecem suporte avançado a Ray Tracing e tecnologias
-                de upscaling por inteligência artificial, garantindo gráficos mais realistas
-                e alto desempenho.
+                As GPUs modernas oferecem Ray Tracing e tecnologias de upscaling por IA,
+                garantindo gráficos realistas e alto desempenho.
             </p>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <h2>Processadores (CPUs)</h2>
             <p>
-                Processadores modernos contam com múltiplos núcleos e alto clock, oferecendo
-                ótimo desempenho em jogos, streaming e multitarefas.
+                Processadores com múltiplos núcleos e alto clock garantem desempenho em jogos,
+                streaming e multitarefas.
             </p>
-        </div>
+        </article>
 
-        <div class="card">
-            <h2>Memória RAM e Armazenamento</h2>
+        <article class="card">
+            <h2>Memória e Armazenamento</h2>
             <p>
-                A memória DDR5 e os SSDs NVMe se tornaram padrão, garantindo velocidade,
-                estabilidade e carregamentos rápidos nos jogos.
+                DDR5 e SSD NVMe proporcionam velocidade, estabilidade e carregamentos rápidos.
             </p>
-        </div>
+        </article>
 
-        <div class="card">
-            <h2>Periféricos Gamer</h2>
-            <p>
-                Teclados mecânicos, mouses precisos, monitores de alta taxa de atualização
-                e headsets imersivos completam a experiência gamer.
-            </p>
-        </div>
-
-        <div class="card">
+        <article class="card">
             <h2>Endereço</h2>
             <p>
                 📍 Rua da Tecnologia Gamer, nº 2025<br>
-                Bairro Centro Digital<br>
-                São Paulo – SP<br>
-                CEP: 00000-000
+                São Paulo – SP
             </p>
-        </div>
+        </article>
+
     </section>
 
-    <footer>
-        <p>© 2025 - Página informativa sobre PC Gamer</p>
-    </footer>
+</main>
+
+<!-- ===== FOOTER (PADRÃO DO SITE) ===== -->
+<footer>
+    <p>© 2025 Tec Senai - Todos os direitos reservados.</p>
+</footer>
+
+<script src="./JS/script.js"></script>
+
 
 </body>
 </html>
